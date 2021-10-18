@@ -1,0 +1,43 @@
+
+.item {
+    height: 52px;
+    display: flex;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.img {
+    position: relative;
+    left: 16px;
+    top: 15px;
+    width: 20px;
+    height: 14px;
+}
+
+.lng {
+    position: relative;
+    width: 62px;
+    height: 20px;
+    left: 32px;
+    top: 15px;
+}
+
+.checkbox {
+    position: relative;
+    left: 273px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.checked {
+    background: #005FFD;
+    border-color: #0049D9;
+}
+
+.unchecked {
+    background: #FFFFFF;
+    border-color:#C1C1C1;
+}

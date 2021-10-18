@@ -1,0 +1,25 @@
+.searchbar {
+    margin-left: 16px;
+    width: 368px;
+    height: 40px;
+    background: #F4F4F4;
+    border-radius: 10px;
+    position: relative;
+}
+
+.loop {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+
+.input {
+    position: absolute;
+    left: 40px;
+    top: 12px;
+    outline: none;
+    border: none;
+    background-color: #F4F4F4;
+    color: #333333;
+}

@@ -1,0 +1,21 @@
+.dropdown {
+    margin: 10px auto;
+    padding-top: 10px;
+    width: 400px;
+    min-height: 50px;
+    box-shadow: 0px 4px 32px rgba(51, 51, 51, 0.15);
+    border-radius: 10px;
+}
+
+.lng {
+    position: relative;
+    color: #333333;
+    font-weight: 600;
+    left: 100px;
+    padding-top: 30px;
+}
+
+
+.unvisible {
+    visibility: hidden;
+}

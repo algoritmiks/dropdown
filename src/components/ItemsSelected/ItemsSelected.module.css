@@ -1,0 +1,45 @@
+.items {
+    margin: 10px auto;
+    padding-left: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 400px;
+    min-height: 40px;
+    display: flex;
+    border: 1px solid #C1C1C1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.item {
+    display: flex;
+    padding: 4px 10px;
+    margin: 3px;
+    font-size: 14px;
+    align-items: center;    
+    justify-content: space-between;
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+
+.remove {
+    cursor: pointer;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.showHide {
+    position: absolute;
+    left: 379px;
+    top: 6px;
+    cursor: pointer;
+    transition: all ease 0.6s;
+}
+
+
+.showHide_close {
+    transform: rotate(180deg);
+    top: 10px;
+}
