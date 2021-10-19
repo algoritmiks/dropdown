@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './Dropdown.module.css';
-import { Items } from '../Items/Items.js';
-import { Searchbar } from '../Searchbar/Searchbar.js';
-import { ItemsSelected } from '../ItemsSelected/ItemsSelected.js';
+import { Items } from '../Items/Items';
+import { Searchbar } from '../Searchbar/Searchbar';
+import { ItemsSelected } from '../ItemsSelected/ItemsSelected';
+import { IAppState, SetSelectedType, SetVisibilityType, changeSearchStringType } from '../../types/types';
 
 
-export const Dropdown = (props) => {
+type PropsType = IAppState & SetSelectedType & SetVisibilityType & changeSearchStringType
+
+export const Dropdown = (props: PropsType) => {
     return (
         <>
             <div className = {styles.lng}>

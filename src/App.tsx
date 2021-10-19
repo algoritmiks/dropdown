@@ -1,11 +1,14 @@
 import React from 'react';
-import Dropdown from './components/Dropdown/Dropdown.js';
+import Dropdown from './components/Dropdown/Dropdown';
 import styles from './App.module.css';
-import mockData from './assets/mockData.js';
+import mockData from './assets/mockData';
+import {IData, IAppState} from './types/types'
 
 
-class App extends React.Component{
-    constructor(props) {
+interface IProps {}
+
+class App extends React.Component<IProps, IAppState>{
+    constructor(props: IProps) {
         super(props);
         this.state = {
             isDropdownVisible: true,
@@ -18,10 +21,10 @@ class App extends React.Component{
         this.changeSearchString = this.changeSearchString.bind(this)
     }
 
-    setSelected(id) {
+    setSelected(id: number) {
         this.setState({
             ...this.state,
-            items: this.state.items.map( (item) => {
+            items: this.state.items.map( (item: IData) => {
                 if (item.id === id) {
                     return {...item, isSelected: !item.isSelected}
                 }
@@ -35,7 +38,7 @@ class App extends React.Component{
     }
 
 
-    changeSearchString(newString) {
+    changeSearchString(newString: string) {
         this.setState({...this.state, searchString: newString});
     }
 

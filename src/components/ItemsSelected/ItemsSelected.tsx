@@ -2,9 +2,12 @@ import React from 'react';
 import styles from './ItemsSelected.module.css'
 import removeImg from '../../assets/remove.png'
 import showHide from '../../assets/showhide.png'
+import { IAppState, SetSelectedType, SetVisibilityType } from '../../types/types';
+
+type PropsType = IAppState & SetSelectedType & SetVisibilityType
 
 
-export const ItemsSelected = ({ items, setSelected, setVisibility, isDropdownVisible }) => {
+export const ItemsSelected = ({ items, setSelected, setVisibility, isDropdownVisible }: PropsType) => {
 
     const showDropdownHandler = () => {
         setVisibility();

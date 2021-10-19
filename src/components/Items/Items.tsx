@@ -1,10 +1,17 @@
 import React from 'react';
 import Item from './Item/Item';
+import {IData} from '../../types/types'
+
+type PropsType = {
+    items: Array<IData>
+    setSelected: (id: number)=>void
+    searchString: String | undefined
+}
 
 
-export const Items = ({ items, setSelected, searchString }) => {
+export const Items = ({ items, setSelected, searchString }: PropsType) => {
 
-    const checkHandler = (id) => {
+    const checkHandler = (id: number) => {
         setSelected(id);
     }
 

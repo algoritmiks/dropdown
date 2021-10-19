@@ -1,9 +1,15 @@
 import React from 'react';
 import img from '../../../assets/check.svg';
 import styles from './Item.module.css';
+import {IData} from '../../../types/types'
 
+type PropsType = {
+    el: IData
+    ind: number
+    checkHandler: (id: number)=>void
+}
 
-const Item = ({el, ind, checkHandler}) => {
+const Item = ({el, ind, checkHandler}: PropsType) => {
     
     return (
         <div className={styles.item} key={ind}>
