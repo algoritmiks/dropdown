@@ -26,7 +26,11 @@ export const Dropdown = (props: PropsType) => {
                     searchString = {props.searchString}
                 />
                 
-                <Items items = {props.items} setSelected = {props.setSelected} searchString = {props.searchString}/>
+                <Items 
+                    items = {props.items} 
+                    setSelected = {props.setSelected} 
+                    searchString = {props.searchString}
+                />
             </div>
         </>
     )

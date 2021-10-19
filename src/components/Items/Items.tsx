@@ -6,7 +6,7 @@ import {IData} from '../../types/types'
 type PropsType = {
     items: Array<IData>
     setSelected: (id: number)=>void
-    searchString: String | undefined
+    searchString: string | undefined
 }
 
 
