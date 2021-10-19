@@ -1,13 +1,15 @@
 import React, { useRef } from 'react';
 import styles from './Searchbar.module.css';
 import search from '../../assets/search.png';
+import {СhangeSearchStringType} from '../../types/types'
 
-export const Searchbar = (props) => {
+
+export const Searchbar = (props: СhangeSearchStringType & any) => {
     
-    const searchInput = useRef(null);
+    const searchInput = useRef<HTMLInputElement>(null);
 
     const inputHandler = () => {
-        props.changeSearchString(searchInput.current.value);
+        props.changeSearchString(searchInput.current!.value);
     }
 
     return (

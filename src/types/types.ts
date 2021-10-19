@@ -20,12 +20,6 @@ export type SetVisibilityType = {
     setVisibility: ()=>void
 }
 
-export type changeSearchStringType = {
+export type СhangeSearchStringType = {
     changeSearchString?: (newString: string)=>void
-}
-
-export interface IAppMethods {
-    setSelected: SetSelectedType
-    setVisibility: SetVisibilityType
-    changeSearchString?: changeSearchStringType
 }

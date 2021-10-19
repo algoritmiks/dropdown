@@ -2,6 +2,7 @@ import React from 'react';
 import Item from './Item/Item';
 import {IData} from '../../types/types'
 
+
 type PropsType = {
     items: Array<IData>
     setSelected: (id: number)=>void

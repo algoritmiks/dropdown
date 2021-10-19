@@ -3,10 +3,10 @@ import styles from './Dropdown.module.css';
 import { Items } from '../Items/Items';
 import { Searchbar } from '../Searchbar/Searchbar';
 import { ItemsSelected } from '../ItemsSelected/ItemsSelected';
-import { IAppState, SetSelectedType, SetVisibilityType, changeSearchStringType } from '../../types/types';
+import { IAppState, SetSelectedType, SetVisibilityType, СhangeSearchStringType } from '../../types/types';
 
 
-type PropsType = IAppState & SetSelectedType & SetVisibilityType & changeSearchStringType
+type PropsType = IAppState & SetSelectedType & SetVisibilityType & СhangeSearchStringType
 
 export const Dropdown = (props: PropsType) => {
     return (
