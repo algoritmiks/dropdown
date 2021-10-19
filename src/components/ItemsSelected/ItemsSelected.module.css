@@ -14,9 +14,10 @@
 
 .item {
     display: flex;
-    padding: 4px 10px;
+    padding: 3px 10px;
     margin: 3px;
     font-size: 14px;
+    height: 26px;
     align-items: center;    
     justify-content: space-between;
     background: #F4F4F4;
@@ -35,7 +36,7 @@
     left: 379px;
     top: 6px;
     cursor: pointer;
-    transition: all ease 0.6s;
+    transition: all linear 0.1s;
 }
 
 
