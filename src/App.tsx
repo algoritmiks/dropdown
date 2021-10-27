@@ -15,12 +15,9 @@ class App extends React.Component<IProps, IAppState>{
             searchString: '',
             items: mockData
         }
-
-        this.setSelected = this.setSelected.bind(this)
-        this.changeSearchString = this.changeSearchString.bind(this)
     }
 
-    setSelected(id: number) {
+    setSelected = (id: number) => {
         this.setState({
             ...this.state,
             items: this.state.items.map( (item: IData) => {
@@ -37,7 +34,7 @@ class App extends React.Component<IProps, IAppState>{
     }
 
 
-    changeSearchString(newString: string) {
+    changeSearchString = (newString: string) => {
         this.setState({...this.state, searchString: newString});
     }
 
