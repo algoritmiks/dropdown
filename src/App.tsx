@@ -5,10 +5,8 @@ import mockData from './assets/mockData';
 import {IData, IAppState} from './types/types'
 
 
-interface IProps {}
-
-class App extends React.Component<IProps, IAppState>{
-    constructor(props: IProps) {
+class App extends React.Component<{}, IAppState>{
+    constructor(props: {}) {
         super(props);
         this.state = {
             isDropdownVisible: true,
