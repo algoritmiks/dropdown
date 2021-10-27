@@ -17,7 +17,6 @@ class App extends React.Component<IProps, IAppState>{
         }
 
         this.setSelected = this.setSelected.bind(this)
-        this.setVisibility = this.setVisibility.bind(this)
         this.changeSearchString = this.changeSearchString.bind(this)
     }
 
@@ -33,7 +32,7 @@ class App extends React.Component<IProps, IAppState>{
         });
     }
 
-    setVisibility() {
+    setVisibility = () => {
         this.setState({...this.state, isDropdownVisible: !this.state.isDropdownVisible});
     }
 

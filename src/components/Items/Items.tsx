@@ -18,15 +18,15 @@ export const Items = ({ items, setSelected, searchString }: PropsType) => {
 
     return (
             <div>
-                {items.map((el, ind)=>{
+                {items.map((el)=>{
                     if (!searchString) {
                         return (
-                            <Item key={ind} el={el} ind={ind} checkHandler={checkHandler}/>
+                            <Item key={el.id} el={el} checkHandler={checkHandler}/>
                         )
                     }
                     if (el.language.toLowerCase().indexOf(searchString.toLowerCase()) === 0) {
                         return (
-                            <Item key={ind} el={el} ind={ind} checkHandler={checkHandler}/>
+                            <Item key={el.id} el={el} checkHandler={checkHandler}/>
                         )
                     }
                     return null

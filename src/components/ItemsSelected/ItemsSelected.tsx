@@ -15,10 +15,10 @@ export const ItemsSelected = ({ items, setSelected, setVisibility, isDropdownVis
 
     return (
             <div className = {styles.items}>
-                {items.map((el, ind)=>{
+                {items.map((el)=>{
                     if (el.isSelected) {
                         return (
-                            <div className = {styles.item} key={ind}>
+                            <div className = {styles.item} key={el.id}>
                                 {el.language}
                                 <div className = {styles.remove} onClick = {()=>{setSelected(el.id)}}>
                                     <img src={removeImg} alt="img"></img>

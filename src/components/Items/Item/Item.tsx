@@ -5,14 +5,13 @@ import {IData} from '../../../types/types'
 
 type PropsType = {
     el: IData
-    ind: number
     checkHandler: (id: number)=>void
 }
 
-const Item = ({el, ind, checkHandler}: PropsType) => {
+const Item = ({el, checkHandler}: PropsType) => {
     
     return (
-        <div className={styles.item} key={ind}>
+        <div className={styles.item}>
             <div className={styles.img}>
                 <img alt="language" src={el.img}></img>
             </div>
